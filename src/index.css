@@ -5,3 +5,19 @@
 body{
     background:#f1efef;
 }
+.container {
+    overflow: hidden;
+  }
+  
+  .moving-text {
+    animation: moveText 10s linear infinite; /* Adjust timing as needed */
+  }
+  
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
